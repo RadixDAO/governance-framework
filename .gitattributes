@@ -1,0 +1,8 @@
+# Governance documents are rendered, signed, and hashed. A document's SHA-256 is
+# recorded in the proposal manifest that ratifies it, so the bytes in the working
+# tree must be identical on every platform. Normalise all text to LF.
+
+* text=auto eol=lf
+
+# Signed documents and other binaries are never normalised.
+*.pdf binary

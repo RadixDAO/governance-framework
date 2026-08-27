@@ -87,8 +87,6 @@ When two documents conflict, the following order applies (highest to lowest):
 3. **Promotion.** The `.md` sources move to the matching root category folders and the PDFs move to `signed/`. They are now the active governance document set. The `pending/` folders are left empty (with a `.gitkeep`) and are ready for the next proposal cycle.
 4. **Renewal.** When an active document is amended by a later proposal, its previous signed PDF moves to `archive/`, and the new `.md` source and its new signed PDF take its place in the root folders and `signed/`.
 
-*The PDFs currently in `archive/` are the signed documents carried over from the pre-formation repository. They are retained as the executed record of that stage.*
-
 ---
 
 ## About this repository

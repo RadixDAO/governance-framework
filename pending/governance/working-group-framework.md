@@ -1,9 +1,6 @@
 # Working Group Framework
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 ---
 

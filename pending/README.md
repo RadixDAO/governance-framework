@@ -122,7 +122,7 @@ with the community and a new legal wrapper would similarly recognise it.
 
 ## Suggested reading order
 
-1. **[GP-PRE-1-Framework-Ratification.md](GP-PRE-1-Framework-Ratification.md)** — what the ratification vote does, and the activation sequence
+1. **[GP-PRE-1-Framework-Ratification.md](GP-PRE-1-Framework-Ratification.md)** — the operative ballot text put to the vote: what is ratified, and the activation sequence
 2. **[constitutional/charter.md](constitutional/charter.md)** — purpose, principles, and constitutional authority (see §4A for activation)
 3. **[legal/operating-agreement.md](legal/operating-agreement.md)** — the legal entity instrument (member-managed → Algorithmically Governed)
 4. **[governance/proposal-and-voting-framework.md](governance/proposal-and-voting-framework.md)** — how decisions are made

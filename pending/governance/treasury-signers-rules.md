@@ -1,9 +1,6 @@
 # Treasury Signers Operational Rules
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 ---
 
@@ -144,6 +141,39 @@ Requests that are missing required fields must not be executed. Signers must not
 
 ---
 
+### 8.2 Verification Against Disbursement Limits
+
+Before signing, each signer must verify the requested disbursement against the budget limits in **DAO Parameters §6.1**. These limits bind the signers directly: a passed proposal authorises a payment, but it does not authorise a payment that breaches a limit, and no proposal is self-executing against this section. From the **Activation Date**, verification covers:
+
+* **Single Transaction Limit.** No single transaction may exceed it, unless the disbursement is authorised as a **Large Milestone Authorization** under DAO Parameters §6.1A, in which case §8.2A applies.
+* **Rolling 30-Day Outflow Cap.** The signers maintain a **running total** of all Treasury / Budget disbursements executed in the trailing 30 days, across all passed proposals and all treasury accounts, recorded under §12. Before signing, the signer confirms that the requested disbursement would not carry that total past the cap. The cap is the **lower** of its two legs, so where treasury value has fallen the 5% leg may bind well below the stated figure; the signers value the treasury at the time of verification and record the figure used.
+* **One-time outflow uplift.** Where a proposal has granted an uplift under DAO Parameters §6.1B, the signers apply the **uplifted figure in place of the standing cap, and only within the single rolling 30-day window in which the authorised disbursement executes**. Every other disbursement executed in that window counts against the uplifted figure in the ordinary way: an uplift enlarges the window, it does not exempt the authorised payment or reserve headroom for it. The signers record the window's opening and closing dates under §12. On expiry the standing cap in §6.1 resumes **automatically** — no vote, notice, ratification, or act of any body is required to restore it, and the signers may not carry an uplifted figure into a later window. An uplift stated without express amending words is one-time; the signers may not treat it as a change to the §6.1 value.
+* **Non-USDC disbursements.** Where the disbursement is made other than in USDC, the signer measures it at its **USDC-equivalent value at the moment of execution**, using the method in DAO Parameters §6.1 (*Measuring non-USDC disbursements*) and the price source register in the **On-Chain Identifiers & Verification Policy §5A**, and records the rate, source, and valuation time under §12. A disbursement authorised under DAO Parameters §6.1A remains authorised despite movement in value since the authorising vote — the DAO authorised a quantity, not a valuation — but it is never exempt from the Rolling 30-Day Outflow Cap, which is applied at execution value in every case.
+* **Scheduled payments and structuring.** Where the requested disbursement forms part of a larger obligation, the signer first applies the measurement test in DAO Parameters §6.1 (*How a scheduled payment is measured*). Where the schedule satisfies **both** limbs of that test — each payment corresponding to a distinct period, milestone, or budget period, and the schedule visible to the DAO when it approved the obligation — the payment is measured **individually, at its own value**, and no escalation is required. Where either limb fails, or the disbursement appears to divide an obligation after the fact or to have been shaped to clear a limit, the signer measures against the **total obligation** and escalates to the RAC before execution, whichever body issued the request. A signer genuinely uncertain which applies escalates rather than deciding at the point of signing: the question is one of characterisation, not of signing discretion.
+
+**Authorization is per-disbursement.** Where one proposal authorised several disbursements under DAO Parameters §6.1A, the signers verify each against §8.2A **separately** at the time it is presented. Approval of a schedule is not approval of any payment within it independently of its verification event, an unexecuted authorization does not transfer to another milestone, and the signers may not net one milestone's unused headroom against another's shortfall.
+
+**Refusal is mandatory, not discretionary.** A signer who determines that a requested disbursement would breach a limit in DAO Parameters §6.1 **must** refuse execution, must report the refusal to the RAC **immediately**, and must record it under §12. This refusal is not an exercise of the discretion in §9: the grounds in §9 are permissive, this one is compulsory, and the clarification cycle cap and invalid-refusal consequence in §9 do not apply to it. A refusal under this section is never selective obstruction under §9A, and never a breach of duty under §18, provided the determination is documented.
+
+Where the breach arises from the **timing** of an otherwise valid disbursement rather than its amount — a payment that clears the outflow cap only because of unrelated disbursements already in the window — the signers notify the requesting party and the RAC of the earliest date on which the disbursement can be executed within the cap, and execute it on that date without a further authorisation. The pre-execution holds in DAO Parameters §9 run from result publication and are not restarted by such a deferral.
+
+---
+
+### 8.2A Executing a Large Milestone Authorization
+
+A disbursement exceeding the Single Transaction Limit may be executed only where the signers verify each of the following — conditions 1 to 4 and 6 giving effect to **DAO Parameters §6.1A**, and condition 5 to **Contributor Compensation Policy §6.4**:
+
+1. the authorising Treasury & Budget proposal expressly invokes §6.1A and states the amount, the recipient, and the obligation discharged — an authorisation may not be inferred from a general budget approval, nor left to any other body to fix later;
+2. the RAC's published result records approval at or above the **Large Milestone Approval Threshold**;
+3. the verification event stated in the proposal has occurred — for a milestone, Steward sign-off under Contributor Compensation Policy §7;
+4. the **High-Risk Signing Threshold** is met and the **High-Risk Execution Delay** has elapsed, regardless of how the transaction would otherwise be classified;
+5. the scope of work confirmed under Contributor Compensation Policy §6.4 does not condition the payment on an authorization not yet given, or, where it does, that condition is satisfied; and
+6. the disbursement, counted in full and **valued at execution**, does not carry the trailing 30-day total past the **Rolling 30-Day Outflow Cap** — or, where the same proposal granted a one-time uplift under DAO Parameters §6.1B, past the uplifted figure, applied only within that uplift's window.
+
+Any condition unsatisfied is a mandatory refusal under §8.2. Where one proposal authorised several disbursements, these conditions are verified **separately for each**, at the time it is presented. The signers record the verification of each condition under §12.
+
+---
+
 ## 9. Refusal or Delay
 
 Treasury Signers may refuse or delay execution only when:
@@ -155,6 +185,8 @@ Treasury Signers may refuse or delay execution only when:
 * execution would violate applicable law or contractual obligations
 
 Any refusal or delay must be documented and reported.
+
+**This list is permissive; §8.2 is mandatory.** A disbursement that would breach a budget limit in DAO Parameters §6.1 is refused under **§8.2**, which obliges refusal, not under this section, which permits it. The clarification cycle cap and the invalid-refusal consequence below apply only to refusals grounded in this section.
 
 **Clarification cycle cap:** A signer may request clarification once per proposal. After the requesting party provides a clarification — or after 2 business days without the signer providing a further specific written objection — the signer must proceed to execution or formally escalate to RAC under the dispute procedure (DAO Parameters §6C). No second ambiguity claim may be filed on the same proposal by the same signer.
 
@@ -173,6 +205,8 @@ A documented pattern of delaying or refusing process verification, or selectivel
 All treasury and legal execution requiring signer authority must occur through approved multi-signature procedures.
 
 No signer may act unilaterally where multi-signature approval is required.
+
+Meeting a signing threshold does not by itself authorise a disbursement: every treasury action is additionally subject to verification against the budget limits in **DAO Parameters §6.1** under §8.2, and a disbursement exceeding the Single Transaction Limit requires a Large Milestone Authorization verified under §8.2A.
 
 ---
 
@@ -230,6 +264,10 @@ Treasury Signers must maintain records of:
 * approval references
 * exceptions or delays
 * incidents and escalations
+* the **rolling 30-day disbursement total** maintained under §8.2, including the treasury valuation used at each verification and the leg of the Rolling 30-Day Outflow Cap that bound
+* each **one-time outflow uplift** applied under §8.2, with its uplifted figure and the opening and closing dates of the window it governed
+* each **mandatory refusal** under §8.2, with the limit engaged and the determination relied on
+* for each **Large Milestone Authorization** executed under §8.2A, the verification of each of its six conditions
 
 ---
 
@@ -237,9 +275,10 @@ Treasury Signers must maintain records of:
 
 Treasury Signers must contribute to:
 
-* routine treasury reporting
+* routine treasury reporting, which must state the rolling 30-day disbursement total and the headroom remaining under the Rolling 30-Day Outflow Cap
 * incident reporting
 * emergency disclosures where applicable
+* immediate reporting to the RAC of any mandatory refusal under §8.2
 
 Sensitive operational details may remain confidential where necessary for security.
 

@@ -1,9 +1,6 @@
 # Radix DAO Permanent RAC Mandate
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 > **Scope of this document.** This Mandate governs the **Permanent RAC**, the standing governance-process oversight body of the Company, constituted following the Transition Period in accordance with **Operating Agreement Article VII** and the **Elections & Role Governance Policy**. The Transition RAC and its limited formation-period authority are governed by Operating Agreement Article VI.
 

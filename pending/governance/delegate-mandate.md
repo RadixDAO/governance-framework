@@ -1,9 +1,6 @@
 # Radix DAO Delegate Mandate
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 > **Scope of this document.** This Mandate is the primary definition of the **Delegates** of the
 > Company and the **Delegated Functions** they perform — the DAO's operational execution roles.

@@ -1,9 +1,6 @@
 # RADIX DAO LLC -- this is the On-Chain Identifiers & Verification Policy incorporated by reference in Schedule 4 of the Operating Agreement of Radix DAO LLC, in accordance with clause 11.4 of that Agreement.
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 ---
 
@@ -96,6 +93,26 @@ Each governance identifier is used strictly as provided by the governance framew
 | Reserve treasury pool (if segmented) | Radix Mainnet | `[account_rdx1… — if established by Governance Proposal]` | `https://dashboard.radixdlt.com/account/[account_rdx1…]` |
 | Grants pool (if segmented) | Radix Mainnet | `[account_rdx1… — if established by Governance Proposal]` | `https://dashboard.radixdlt.com/account/[account_rdx1…]` |
 | Emergency Safe Address | Radix Mainnet | `[account_rdx1… — designated per DAO Parameters §6.1]` | `https://dashboard.radixdlt.com/account/[account_rdx1…]` |
+
+---
+
+## 5A. Valuation Rate Sources
+
+The budget limits in **DAO Parameters §6.1** are denominated in USDC, while the treasury holds and pays XRD. Measuring a non-USDC disbursement against those limits therefore requires a rate, and a rate requires a named source — otherwise the Treasury Signers cannot perform the verification that DAO Parameters §6.1 and **Treasury Signers Rules §8.2** require of them, and the limits are unenforceable in the currency the DAO actually pays in.
+
+The sources below are **ordered**. The signers use the first available source; where it is unavailable, unreachable, or returning stale data, they use the next and record which was used and why (Treasury Signers Rules §12).
+
+| Order | Source | Method | Status |
+|---|---|---|---|
+| 1 | `[to be designated]` | 24-hour volume-weighted average price, XRD/USD | Pending designation |
+| 2 | `[to be designated]` | 24-hour volume-weighted average price, XRD/USD | Pending designation |
+| 3 | `[to be designated]` | 24-hour volume-weighted average price, XRD/USD | Pending designation |
+
+**Designation.** During the Transition Period the sources are designated by Transition RAC resolution published to the Official Venue, as part of establishing the treasury and custody framework (**Operating Agreement §6.5(d)**). From the Activation Date, changes require a Treasury & Budget proposal. **Until at least one source is designated, no non-USDC disbursement may be measured against DAO Parameters §6.1, and the Treasury Signers must refuse execution of any such disbursement under Treasury Signers Rules §8.2.**
+
+**Requirements for a designated source.** A source must publish its data publicly, so that any Governance Participant can reproduce a verification from the same inputs; must cover XRD against USD or a USD-pegged stablecoin; and must not be operated by, or under common control with, any Treasury Signer, RAC member, or provider then engaged by the DAO. At least **two** sources should be designated, so that the unavailability of one does not halt execution.
+
+**Method.** A 24-hour volume-weighted average is used rather than a spot price so that a single-block or single-venue price movement cannot, by itself, place a disbursement above or below a limit. The window is fixed in DAO Parameters §6.1 and is not a per-source setting.
 
 ---
 

@@ -1,9 +1,6 @@
 # DAO Parameters Registry
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 ---
 
@@ -80,6 +77,8 @@ Quorum is measured as Participation — YES + NO + ABSTAIN — as defined in Pro
 | Temperature Check (TC) | ≥ 50% YES |
 
 Approval is measured as the YES share of Decisive Votes — YES + NO, excluding ABSTAIN — as defined in Proposal & Voting Framework §6.3.
+
+**Treasury & Budget proposals invoking §6.1A** are approved at the **Large Milestone Approval Threshold** (≥ 66% YES) in place of the ≥ 50% figure above. The elevated threshold attaches to the authorization sought, not to the proposal type: an ordinary Treasury & Budget proposal is unaffected.
 
 **Election proposals** (Proposal & Voting Framework §4.5) have no single approval threshold and are not listed above, because neither election mechanism decides on a YES share of the whole vote. Majority Judgment turns on the qualifying grade and the Minimum Qualifying Grade (Proposal & Voting Framework §6.2.4; §6B); the two-stage mechanism ranks by voting power at Stage 1 and applies the Election Stage 2 Approval Threshold per candidate at Stage 2 (§6.2.5; §6B). The Temperature Check row does apply to an Election proposal's Temperature Check.
 
@@ -236,6 +235,8 @@ These parameters carry the activation and transition mechanics that the **Charte
 
 ### 6.1 Budget Limits
 
+> **Phase scope.** The limits in this section bind **any body with treasury-spending authority from the Activation Date** — the Permanent RAC, the Treasury Signers, and Working Group Stewards spending within an approved budget. The **Transition RAC is not bound** by them: during the Transition Period the treasury operates under **Operating Agreement §6.5(d)** and §§9.10–9.12, at the Transition-Period signing thresholds in §6A, and formation spending is authorised by Transition RAC resolution under OA §6.6 rather than by the values below. The Emergency Safe Address row applies in both phases, as its own text provides.
+
 | Parameter                          | Value                |
 | ---------------------------------- | -------------------- |
 | Working Group Budget Cap           | Defined per proposal |
@@ -244,8 +245,80 @@ These parameters carry the activation and transition mechanics that the **Charte
 | Emergency Spend Limit              | $5,000 USDC — for operational emergencies (asset security, key rotation, critical infrastructure) |
 | Governance Reconstitution Limit    | $25,000 USDC — available only when a RAC or signer continuity event has been declared under Governance Continuity §4.1 or §4.2; covers emergency election costs, legal filings, and Registered Agent compliance fees; subject to GP ratification within 30 days |
 | Legal Defense Advancement Limit    | $25,000 USDC per legal proceeding — a bridging pool covering immediate legal response costs for one or more Delegates or RAC members named in the same proceeding arising from their role, before a GP can authorize ongoing funding; the $12,000 Single Transaction Limit does not apply within this pool; does not require a declared continuity event; subject to GP ratification within 30 days and the repayment undertaking in OA §12.5 |
-| Rolling 30-Day Outflow Cap         | $50,000 USDC or 5% of treasury value (whichever is lower) — maximum total Treasury / Budget disbursements across all passed proposals in any rolling 30-day window. Signers must refuse execution of any proposal that would cause the rolling total to breach this cap and must report the refusal to RAC immediately. Adjustable by Treasury & Budget proposal. |
+| Rolling 30-Day Outflow Cap         | $50,000 USDC or 5% of treasury value (whichever is lower) — maximum total Treasury / Budget disbursements across all passed proposals in any rolling 30-day window. Signers must refuse execution of any proposal that would cause the rolling total to breach this cap and must report the refusal to RAC immediately (Treasury Signers Rules §8.2). Adjustable by Treasury & Budget proposal — permanently by express amendment of this row, or for a single window by a one-time uplift under §6.1B. |
 | Emergency Safe Address             | Must be designated **before the Company receives the principal asset transfer** (OA Schedule 5, conditions 8–9). During the Transition Period, designation is made by Transition RAC resolution published to the Official Venue, as part of establishing the treasury and custody framework (OA §6.5(d)); thereafter, changes to the designated address require a Treasury & Budget proposal. Until designated, Tier 2 emergency asset movement (Emergency & Safeguards Policy §6) is not available. The designated address is recorded in the **On-Chain Identifiers & Verification Policy §5** with its explorer verification link. |
+
+**Measuring non-USDC disbursements.** The limits in this section are denominated in USDC, but the DAO may pay in XRD or in a mixed denomination (Contributor Compensation Policy §5). A disbursement made other than in USDC is measured against every limit in this section at its **USDC-equivalent value**, determined as follows:
+
+* **Rate source.** The rate is taken from the price source register in the **On-Chain Identifiers & Verification Policy §5A**, using the volume-weighted average price over the **24 hours** preceding the valuation time. Where that source is unavailable, the Treasury Signers use the next source in that register's order and record which was used. Until at least one source is designated, a non-USDC disbursement cannot be measured and must be refused (On-Chain Identifiers & Verification Policy §5A).
+* **Valuation time — authorization.** For determining whether a payment requires a **Large Milestone Authorization** (§6.1A), and for the figures stated in the authorising proposal, the valuation time is the **opening of the voting period** on that proposal. This fixes what the DAO is voting on: voters see one figure, and it does not move under them while the vote is open.
+* **Valuation time — execution.** For the **Rolling 30-Day Outflow Cap** and the signers' verification under Treasury Signers Rules §8.2, the valuation time is the **moment of execution**. Solvency protection must measure what actually leaves the treasury, not what it was worth when authorised.
+* **Divergence between the two.** A disbursement authorised under §6.1A remains authorised notwithstanding a change in USDC-equivalent value between authorization and execution: the DAO authorised a **quantity** of the payment currency, at the rate agreed with the provider under Contributor Compensation Policy §5, and market movement is not a fresh authorization question. It does **not** become exempt from the Rolling 30-Day Outflow Cap, which is applied at execution value in every case. Where movement in value would carry the disbursement past the cap, the deferral procedure in Treasury Signers Rules §8.2 applies.
+* **Recording.** The rate, source, and valuation time used are recorded with each verification under Treasury Signers Rules §12, so that any participant can reproduce the calculation from public data.
+
+**Payment in the DAO's own governance asset.** A disbursement in XRD, or in another asset carrying eligible voting power (§8A), transfers **voting power** to the recipient along with the value. Where a single engagement's total payments would transfer voting power approaching the **UBO KYC Threshold** (§8), the engaging body must state this in the RFP under Contributor Compensation Policy §6.1 and in the authorising proposal, so that the DAO decides the governance consequence knowingly rather than discovering it at execution.
+
+**No structuring around the limits.** A single payment obligation — an engagement fee, a delivery milestone, a purchase — must not be divided into multiple transactions, claims, or invoices in order to remain below the **Single Transaction Limit**, nor spread across successive 30-day windows in order to remain below the **Rolling 30-Day Outflow Cap**. Where a disbursement forms part of a larger obligation, it is measured against both limits by reference to the **total obligation**, aggregating all payments to the same recipient or affiliated group arising from the same engagement, proposal, or milestone. This mirrors the anti-splitting rule that applies to the RFP Threshold (Contributor Compensation Policy §4.3; §7 below), and is enforced by the Treasury Signers under **Treasury Signers Rules §8.2**.
+
+A payment schedule fixed in the authorising proposal **before the first payment** is not structuring. The following are expressly permitted: a Standing Service Authorization (Execution & Treasury Actions Policy §7.5); a milestone schedule set out in the accepted scope of work (Contributor Compensation Policy §7); a Working Group budget disbursed over its budget period (Working Group Framework §7); and a disbursement authorised under §6.1A. What this rule forbids is dividing an obligation *after* it exists, or shaping a schedule to clear a limit rather than to match the delivery of the work.
+
+**How a scheduled payment is measured.** Where a payment schedule was fixed in the authorising proposal or the accepted scope of work **before the first payment**, each payment is measured against the limits **individually, at its own value**. Total-obligation aggregation is the test for a division made *after* the obligation exists, or for a schedule shaped to clear a limit rather than to match delivery; it is **not** a valuation method applied to every instalment of a legitimate schedule.
+
+A schedule is legitimate for this purpose where **both**:
+
+* each payment corresponds to a **distinct** period of service, delivered milestone, or budget period — not to a fraction of a single undivided obligation; and
+* the schedule was **visible to the DAO** when it approved the obligation, so that the DAO approved the payment pattern and not merely the total.
+
+Where either limb fails, the payments are aggregated and measured at total-obligation value. Where a signer is uncertain whether a schedule satisfies both limbs, the matter is escalated to the RAC under Treasury Signers Rules §8.2 rather than resolved at the point of signing.
+
+Without this rule the aggregation sentence above would swallow the exceptions that precede it: every monthly payment of a twelve-month service would be measured at the value of the whole engagement, and §6.1A would be required for the ordinary operation of any budget larger than the Single Transaction Limit. Aggregation exists to defeat evasion, not to re-price honest instalments.
+
+---
+
+### 6.1A Large Milestone Authorization
+
+The Single Transaction Limit is calibrated for routine operational disbursement. Some authorised work is a **single obligation** that cannot honestly be paid in instalments — a substantial delivery milestone, a lump-sum engagement fee, an asset purchase — and the anti-structuring rule above forbids manufacturing instalments to fit it through. This section is the designed route for such a payment. It raises the **bar**, not the limit: a large disbursement remains possible, but never routine, and never at the ordinary Treasury & Budget threshold.
+
+A single disbursement exceeding the Single Transaction Limit may be executed only where **all** of the following are satisfied:
+
+1. **Express authorization.** The disbursement is authorised by a Treasury & Budget proposal that states the amount, the recipient, and the milestone or obligation it discharges, and that expressly invokes this section. A Large Milestone Authorization may not be implied from a general budget approval.
+2. **Elevated approval.** The proposal passed at the **Large Milestone Approval Threshold** below, in place of the ordinary Treasury & Budget approval threshold (§3.3). Quorum, the absolute participation floor (§3.2), and the Minimum Affirmative Support floor (§3.3A) apply unchanged.
+3. **Verified delivery.** Where the disbursement discharges a milestone, payment is released only on Steward sign-off that the milestone has been met (Contributor Compensation Policy §7). Where it discharges an obligation of another kind, the proposal must state the verification event that releases payment.
+4. **High-risk execution.** The disbursement is executed at the **High-Risk Signing Threshold** (§6A) and is subject to the **High-Risk Execution Delay** (§9), whether or not it would otherwise be classified as high-risk. A disbursement of this size is in any event ordinarily a protected matter under Operating Agreement §9.12(a).
+5. **Counted in full.** The disbursement counts in full against the **Rolling 30-Day Outflow Cap**. This section lifts the per-transaction limit only; it does not lift the outflow cap, which protects treasury solvency rather than transaction discipline. Where the authorised disbursement would carry the rolling total past the cap, the same proposal may grant a **one-time outflow uplift** under §6.1B.
+6. **Not delegable.** A Large Milestone Authorization may not be granted by a Working Group Steward within an approved budget, by the RAC, or by any body other than the DAO by vote. A Working Group whose approved budget is large enough to contain such a payment must still bring the payment itself to a proposal under this section.
+
+**One proposal may carry several authorizations.** A single Treasury & Budget proposal may grant a Large Milestone Authorization for **more than one** disbursement — most commonly the successive milestones of a single engagement. Each authorised disbursement must satisfy conditions **1, 3, 4, 5, and 6** in its own right: its own stated amount, recipient, and obligation discharged; its own verification event under condition 3; its own execution at the high-risk threshold and delay; and its own measurement against the outflow cap at execution. The elevated approval under condition 2 is given once, to the proposal as a whole, and the DAO accepts or rejects the schedule as a package (Proposal & Voting Framework §4.3).
+
+**An authorization is spent when its disbursement executes.** An unexecuted authorization does not accumulate, does not transfer to another milestone, and does not survive the engagement it was granted for. A milestone whose verification event never occurs is never authorised at all: the DAO's approval of a schedule is not approval of the payments within it independently of delivery.
+
+| Parameter | Value | Description |
+| --------- | ----- | ----------- |
+| Large Milestone Approval Threshold | **≥ 66% YES** | Approval required for a Treasury & Budget proposal invoking §6.1A, measured against Decisive Votes (Proposal & Voting Framework §6.3). Set at the Constitutional approval level rather than the ordinary Treasury & Budget ≥50%, because the proposal asks the DAO to set aside a standing treasury safeguard for one payment |
+| Large Milestone Signing Threshold | High-Risk Signing Threshold (§6A) | Defined by reference so the two cannot diverge. Post-activation: 4-of-5 |
+| Large Milestone Execution Delay | High-Risk Execution Delay (§9) | Defined by reference. Minimum 72 hours after RAC result publication, in total |
+| Large Milestone Outflow Uplift | **One-time; window-scoped; automatic expiry** | Default effect of any outflow-cap figure stated in a §6.1A proposal. Applies to the single rolling 30-day window in which the authorised disbursement executes, then expires without further act. A permanent change to the cap requires express amending words |
+
+**Effective from the Activation Date**, consistent with the phase scope of §6.1.
+
+---
+
+### 6.1B One-Time Outflow Uplift
+
+Where a disbursement authorised under §6.1A would carry the rolling 30-day total past the **Rolling 30-Day Outflow Cap**, the **same** Treasury & Budget proposal may grant a one-time uplift — no separate Governance Process proposal is required, because §6.1 already makes that cap adjustable by Treasury & Budget proposal. An uplift granted under this section:
+
+* **states an uplifted cap figure**, and applies it **only** to the single rolling 30-day window in which the authorised disbursement executes;
+* **is not an amendment.** The value recorded in §6.1 is unchanged. The uplift **expires automatically** at the end of that window and the standing cap resumes, with no further vote, notice, ratification, or act by any body;
+* **does not exempt the disbursement from the cap.** The authorised disbursement counts against the uplifted figure, and so does every other disbursement executed in the same window. The DAO accepts **one larger window**, it does not suspend the cap for that window — other spending still competes for the headroom that remains;
+* **may not be stacked.** An uplift may not be granted for a window overlapping one in which a prior uplift applied, unless the proposal expressly discloses the prior uplift and states the combined effect of both. Successive uplifts are how a standing cap is raised by stealth, and disclosure is what puts that in front of the voter.
+
+**Several uplifts in one proposal.** Where a proposal grants Large Milestone Authorizations for more than one disbursement (§6.1A), it may grant a **separate uplift for each**, and must state each uplifted figure and the disbursement it attaches to. Each uplift is independent: it governs only the window in which **its own** disbursement executes, and expires with that window. Uplifts granted by the same proposal are **not stacked** with one another merely by sharing a proposal — stacking is a question about **overlapping windows**, not about common origin.
+
+Where two authorised disbursements from the same proposal do execute within overlapping windows, the higher uplifted figure governs the overlap and **both** disbursements count against it. The proposal must state which figure applies where the schedule makes an overlap foreseeable; where it does not, the signers apply the higher figure and report the ambiguity to the RAC under Treasury Signers Rules §8.2. An uplift schedule is not an instruction to the signers to find headroom that does not exist: where the overlap cannot be executed within the governing figure, the deferral procedure applies in the ordinary way.
+
+**A permanent change is a different act, and must say so.** A proposal that intends to change the Rolling 30-Day Outflow Cap for all future windows must say so expressly and amend the §6.1 row; it is then a change to the parameter, not an uplift, and it survives the disbursement that occasioned it. **Silence is a one-time uplift.** An authorisation for a single payment never carries a standing change to a treasury safeguard by implication, and neither the RAC nor the Treasury Signers may read one into it.
+
+**Effective from the Activation Date**, consistent with the phase scope of §6.1.
 
 ---
 
@@ -415,7 +488,7 @@ The concrete on-chain identifiers for the treasury and governance infrastructure
 | Parameter                 | Value          |
 | ------------------------- | -------------- |
 | Pre-Execution Hold        | 48 hours after RAC result publication (mandatory) — Treasury Signers may not initiate execution of any Treasury / Budget or Executable proposal until the Compliance Challenge Window (§4) has fully closed |
-| High-Risk Execution Delay | 24 hours additional after the pre-execution hold (mandatory) — applies to transactions classified as high-risk (4-of-5 signing threshold post-activation; unanimous-of-seated, minimum two, during the Transition Period, per §6A); total minimum 72 hours after RAC result publication |
+| High-Risk Execution Delay | 24 hours additional after the pre-execution hold (mandatory) — applies to any disbursement executed under a Large Milestone Authorization (§6.1A) and to transactions classified as high-risk (4-of-5 signing threshold post-activation; unanimous-of-seated, minimum two, during the Transition Period, per §6A); total minimum 72 hours after RAC result publication |
 
 ---
 

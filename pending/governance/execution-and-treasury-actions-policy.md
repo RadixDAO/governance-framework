@@ -1,9 +1,6 @@
 # Execution & Treasury Actions Policy
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 ---
 
@@ -141,6 +138,7 @@ Treasury structure — including multi-account segmentation, multisig thresholds
 Treasury actions must NOT:
 
 * Exceed approved budgets
+* Breach a budget limit in **DAO Parameters §6.1**, including the Single Transaction Limit and the Rolling 30-Day Outflow Cap, or be structured so as to avoid one. A payment above the Single Transaction Limit requires a Large Milestone Authorization (DAO Parameters §6.1A). These limits bind at execution regardless of what a passed proposal or a signed scope of work provides, and are verified by the Treasury Signers under **Treasury Signers Rules §8.2**
 * Deviate from proposal intent
 * Be executed without proper authorization
 * Be paid to any recipient whose KYC/AML compliance status is unknown or unverified, where KYC is required under the **Contributor Compensation Policy §3.5** or **Operating Agreement §10.4**
@@ -176,7 +174,11 @@ RAC verifies each payment document against the approved proposal before Treasury
 
 ### 7.5 Standing Service Authorization
 
-A governance vote authorizing a recurring fixed-rate service (Model B) constitutes a standing authorization for the full approved term. Treasury Signers may release payment each period upon receipt of a verified claim or invoice without a new governance vote.
+A governance vote authorizing a recurring service at a fixed periodic rate constitutes a standing authorization for the full approved term, whether the service is **Model B** (fixed-rate service delivery) or **Model C** (fully compensated work). Treasury Signers may release payment each period upon receipt of a verified claim or invoice without a new governance vote.
+
+**Model C standing authorizations.** Where the service is Model C, the proposal must additionally state the deliverables or service standard against which each period's payment is released, and the reporting obligation attaching to it. Each period's payment is then released on a verified claim or invoice **and** confirmation that the period's obligation was met (Contributor Compensation Policy §7). A Model C standing authorization dispenses with a fresh governance vote each period; it does **not** dispense with delivery verification, and a period whose obligation was not met is not payable merely because the authorization is standing.
+
+Model C was previously outside this section, which reached only Model B. That excluded from the multi-period mechanism most work that is genuinely multi-period — continuing development, maintenance, support, and operations all carry a labour component — and pushed it into either milestone disbursement, which suits project work rather than continuous service, or a fresh proposal every period. The requirements below apply to both models; the verification requirement above is what makes the extension safe.
 
 Requirements:
 

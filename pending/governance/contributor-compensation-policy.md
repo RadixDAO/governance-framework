@@ -1,9 +1,6 @@
 # Contributor Compensation Policy
 
-| Field | Value |
-|---|---|
-| **Version** | v1.0.0 |
-| **Last updated** | 2026-08-25 |
+*Version v1.0.0 — Last updated 2026-08-27*
 
 ---
 
@@ -154,6 +151,15 @@ The Working Group publishes an RFP on the governance forum containing:
 * Budget range
 * Evaluation criteria
 * Submission deadline (minimum **14-day** open period)
+* **Disbursement constraints** — the constraints under which the DAO is able to pay, stated as terms of the competition (see below)
+
+**Disbursement constraints must be published with the RFP.** The RFP must state the **Single Transaction Limit** and the **Rolling 30-Day Outflow Cap** (DAO Parameters §6.1), the currency in which payment will be made and, where payment is to be made other than in USDC, the valuation rule by which it will be measured against those limits (DAO Parameters §6.1, *Measuring non-USDC disbursements*). Where the work is of a size or shape that any payment would exceed the Single Transaction Limit, the RFP must additionally state:
+
+* that such a payment can be made only under a **Large Milestone Authorization** (DAO Parameters §6.1A), granted by a Treasury & Budget proposal at **≥66% YES**;
+* that the engaging body **cannot promise, procure, or guarantee** that authorization, which is the DAO's decision alone and may fail; and
+* that any resulting engagement will be confirmed on the conditional basis in §6.4.
+
+These are constraints on the DAO's capacity to pay, not preferences. A bidder who learns of them at contract signature has been misled about what the DAO was ever able to offer, and the engaging body that published the RFP is responsible for that. Publishing them also puts every bidder on the same footing: a bid structured to be payable is offering the DAO something a bid that ignores the limits is not, and §6.3 may weigh that.
 
 ---
 
@@ -166,8 +172,11 @@ Submissions must include:
 * Proposed approach
 * Qualifications and relevant experience
 * Itemized cost breakdown
+* **Proposed payment schedule** — the amount, currency, and trigger of each payment sought, and identification of any payment that would exceed the Single Transaction Limit and therefore require a Large Milestone Authorization (DAO Parameters §6.1A)
 * Proposed timeline
 * Conflict of interest disclosures (per **Conflict of Interest Policy**)
+
+**Payability is an evaluation criterion.** A payment schedule that fits the disbursement constraints published under §6.1 delivers value the DAO can actually receive on the stated timeline; one that does not imposes on the DAO either a supermajority vote it may not carry, or a delay it did not choose. Stewards may weigh this under §6.3, and must not treat a schedule requiring §6.1A as disqualifying in itself — some work genuinely cannot be divided, and §6.1A exists for it.
 
 ---
 
@@ -252,6 +261,19 @@ Repeated frivolous filings may result in sanctions under the **Code of Conduct �
 ### 6.4 Engagement Confirmation
 
 Once selected, the engagement is confirmed by a written scope of work document signed (or on-chain acknowledged) by both parties. Confirmation may not take place while the Award Challenge Window is open or a challenge under §6.3A is unresolved. Payment is only released against this confirmed scope. Where the engagement is designated continuity-critical under §6.6, the designation and the scope it covers are recorded in that document.
+
+**The scope of work may not oblige the DAO to a payment it has no authority to make.** Selection under §6.3 is a procurement decision; it authorises no disbursement and disapplies no limit. The budget limits in **DAO Parameters §6.1** bind the Treasury Signers at execution regardless of what the scope of work provides (**Treasury Signers Rules §8.2**), so a schedule the DAO cannot execute does not become executable by being signed — it becomes a contractual obligation the Company cannot perform.
+
+Accordingly, where the payment schedule includes any payment exceeding the Single Transaction Limit, the engaging body must do one of the following before signature:
+
+* **Authorise first.** Obtain the Large Milestone Authorization (DAO Parameters §6.1A) covering every such payment, and sign against it; or
+* **Sign conditionally.** Sign a scope of work in which the DAO's obligation in respect of each such payment is **expressly conditional** on that authorization being granted, and which provides that failure to obtain it terminates the obligation **without liability, penalty, or damages** to the Company. The condition must have been disclosed in the RFP under §6.1.
+
+A scope of work that does neither may not be signed, and a signature given in breach of this paragraph does not bind the DAO's treasury: the Treasury Signers refuse execution under Treasury Signers Rules §8.2 in the ordinary way, and the engaging body answers for the exposure.
+
+**Conditional signature is the ordinary route.** A Large Milestone Authorization requires ≥66% YES and cannot be whipped, promised, or predicted by the body running the procurement. Requiring authorisation before signature would mean asking the DAO to vote a supermajority on a package no counterparty has yet committed to; requiring signature before authorisation would mean binding the Company to terms the DAO may refuse to fund. The conditional route is what lets both happen in the right order, and it is why §6.1 requires the condition to be disclosed to bidders at the outset rather than produced at signature.
+
+**Timing and delay.** Where a payment is authorised but cannot execute in the window sought because of the Rolling 30-Day Outflow Cap, the deferral procedure in Treasury Signers Rules §8.2 applies and the scope of work must accommodate it. A scope of work may not make the DAO liable for a delay arising from the operation of its own disbursement limits, where those limits were disclosed under §6.1.
 
 ---
 

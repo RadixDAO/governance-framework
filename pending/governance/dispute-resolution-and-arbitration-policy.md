@@ -169,7 +169,7 @@ Where ambiguity exists in a governance document — the Charter, an operational 
 
 ## 9. Misconduct Handling
 
-Allegations of misconduct must be supported by evidence and submitted in writing to the RAC (or, where the alleged conduct involves a RAC member, to the Governance & Legal Working Group). The RAC reviews the matter within the Misconduct Review Window (DAO Parameters §6C), gives the accused the opportunity to respond, and issues a finding. Where misconduct is confirmed, available remedies include censure under the Code of Conduct, removal under the Elections & Role Governance Policy §10, and — for self-dealing or fraud — a Governance Proposal to recover misappropriated funds.
+Allegations of misconduct must be supported by evidence and submitted in writing to the RAC. Where the alleged conduct involves a RAC member, the allegation bypasses Level 3 and is decided at Level 4, since the RAC does not review an allegation against its own member. The RAC reviews the matter within the Misconduct Review Window (DAO Parameters §6C), gives the accused the opportunity to respond, and issues a finding. Where misconduct is confirmed, available remedies include censure under the Code of Conduct, removal under the Elections & Role Governance Policy §10, and — for self-dealing or fraud — a Governance Proposal to recover misappropriated funds.
 
 ---
 

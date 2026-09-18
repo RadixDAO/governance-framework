@@ -149,13 +149,7 @@ This section operates alongside Treasury Signers Rules §9 (valid refusal ground
 
 ### Valid Grounds for Refusal
 
-A signer may refuse execution on the grounds defined in Treasury Signers Rules §9, including:
-
-* The proposal text is inconsistent or ambiguous
-* Required authorization is missing or defective
-* Execution would create a legal or security risk
-
-Refusal on grounds outside this list is itself a Selective Obstruction matter under Treasury Signers Rules §9A and may give rise to a misconduct dispute under §4.4.
+A signer may refuse execution only on the grounds enumerated in Treasury Signers Rules §9, which is authoritative for those grounds. Refusal on grounds outside that section is itself a Selective Obstruction matter under Treasury Signers Rules §9A and may give rise to a misconduct dispute under §4.4.
 
 ### Process
 

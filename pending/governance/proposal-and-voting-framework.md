@@ -1,6 +1,6 @@
 # Proposal & Voting Framework
 
-*Version v1.0.0 — Last updated 2026-08-27*
+*Version v1.0.0 — Last updated 2026-09-19*
 
 ---
 
@@ -116,7 +116,7 @@ Treasury & Budget proposals use the Standard vote type (§6.2.1). Where funds ar
 * Technical or operational changes
 * On-chain or system execution
 
-**Multi-option Approval Voting polls** are a sub-type of Executable proposals for cases where the community must choose between several defined options rather than a binary question. They use Approval Voting (§6.2.2) rather than the Standard vote type. A shortened 1-day Temperature Check applies (DAO Parameters §3.1). The result is advisory unless the proposal text mandates execution of the winning option.
+**Multi-option Approval Voting polls** are a sub-type of Executable proposals for cases where the community must choose between several defined options rather than a binary question. They use Approval Voting (§6.2.2) rather than the Standard vote type. A shortened 2-day Temperature Check applies (DAO Parameters §3.1). The result is advisory unless the proposal text mandates execution of the winning option.
 
 Any Executable proposal that requires compensated work — including fixed-rate service delivery — must include a Treasury & Budget component specifying the cost arrangement and receiving party. Such combined proposals are evaluated against Treasury & Budget quorum and approval thresholds (the more stringent of the two proposal types). Executable proposals with zero cost proceed under Executable thresholds.
 
@@ -128,7 +128,7 @@ Selection of candidates for DAO roles: RAC members, Working Group Stewards, and 
 
 Delegated Functions (Treasury Signing, Governance Operations, Legal Signatory, Compliance Liaison, Web2 Custodian) are **not** ordinarily filled by Election Proposal: they are allocated by the RAC from among its seated members and run with the holder's RAC seat (Delegate Mandate §3; Elections & Role Governance Policy §2). Where the DAO has resolved by Governance Process proposal to fill a Delegated Function by election, that function is an Election Proposal under this section like any other role.
 
-Election proposals use a modified version of the standard pipeline (§3): the Draft Discussion and Nomination Period are merged into a single combined Nomination & Discussion Window (DAO Parameters §3.1 and §6B), and the Temperature Check is compressed to a minimum of 1 day (DAO Parameters §3.1). The Temperature Check for an Election proposal also serves as the community's approval of the candidate list (§3.2).
+Election proposals use a modified version of the standard pipeline (§3): the Draft Discussion and Nomination Period are merged into a single combined Nomination & Discussion Window (DAO Parameters §3.1 and §6B), and the Temperature Check is compressed to a minimum of 2 days (DAO Parameters §3.1). The Temperature Check for an Election proposal also serves as the community's approval of the candidate list (§3.2).
 
 **Election mechanisms**
 

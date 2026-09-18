@@ -10,6 +10,8 @@
 
 **Majority Judgment is the default.** Every election runs under it unless the DAO has resolved otherwise by Governance Process proposal, in force before the Nomination & Discussion Window opens (Elections & Role Governance Policy §7). Two-stage remains fully specified and fully operative; it runs where the DAO has said so.
 
+**Which seats this is about.** Elections fill RAC seats, Working Group Steward seats, and Strategic Coordination WG seats (Framework §4.5). The five Delegated Functions — Treasury Signing, Governance Operations, Legal Signatory, Compliance Liaison, Web2 Custodian — are **not** ordinarily elected: the RAC allocates them from among its seated members and they run with the holder's RAC seat (Delegate Mandate §3). A Delegated Function becomes an election only where the DAO has resolved that it be filled by one, and nothing in this guide applies to it until then.
+
 **Nobody chooses per election.** The RAC does not select a mechanism, and neither does the body running a founding election or a re-run. The only decision this guide informs is a **proposal put to the DAO** — whether to resolve a departure from the default for a role or a class of roles, or to return one to it. If you are reading this in order to administer an election, there is nothing here for you to decide.
 
 Both mechanisms are legitimate and both are fully specified. Neither is a placeholder for the other. But they ask the electorate different questions, and from the same field of candidates they will not always return the same people. That is not a defect — it is the reason having two is worth anything. It is also why a departure deserves a reason, and why that reason is worth writing down and putting to a vote.
@@ -150,7 +152,7 @@ But many seats usually means many nominees, and principle 2 then pulls the other
 
 ### 7. Weigh the cost of seating the wrong person
 
-The two-stage mechanism puts an explicit, individual veto point on every candidate: a 60% approval gate, per person, with no Abstain to soften it. That is an expensive extra round, and for some seats it is cheap insurance — Treasury Signers holding multisig keys, or any role where removing the wrong occupant is slow and damaging.
+The two-stage mechanism puts an explicit, individual veto point on every candidate: a 60% approval gate, per person, with no Abstain to soften it. That is an expensive extra round, and for some seats it is cheap insurance — any role where removing the wrong occupant is slow and damaging.
 
 Majority Judgment's equivalent protection is the Minimum Qualifying Grade, backed by the Grade Quantile. It is a real bar, and because the quantile is three-fifths it is a supermajority bar — but a *different kind* of bar: it asks whether three-fifths of the power grades the candidate at or above a level, not whether they affirmatively endorse that candidate in a ballot about them alone. The floor itself still cannot be tuned into a share requirement; only the quantile sets the share, and it is fixed for every election.
 
@@ -211,13 +213,13 @@ The default answers every case below. This table is about which of them are wort
 | Seat | Is a departure worth proposing? | The argument |
 |---|---|---|
 | Permanent RAC | **The strongest case, and it is about scope alone** | The body that publishes results, adjudicates ties, and issues binding interpretations. Not a threshold argument — three-fifths of turnout either way — but every seat is decided by one ballot on one snapshot, where two-stage spreads the same decision across 1 + 2×seats separate votes with separate snapshots (Framework §6.1) |
-| Treasury Signers | **A real case** | Multisig keys. The per-candidate gate is a per-candidate *objection*: a minority declining one signer leaves the rest untouched |
+| Treasury Signers | **Does not ordinarily arise** | Treasury Signing is a Delegated Function: it is allocated by the RAC from among its seated members and runs with the holder's RAC seat (Framework §4.5; Delegate Mandate §3). There is no standing Treasury Signer election to set a mechanism for, and capture of the function runs through the RAC seat rather than alongside it. The question arises only where the DAO has resolved to fill the function by election — and that resolution can name the mechanism itself (Delegate Mandate §3, §3.1). Were it elected, the case would be a real one: multisig keys, and a per-candidate gate that lets a minority decline one signer without touching the rest |
 | Working Group Stewards | No | Smaller fields, lower stakes, and the grade record is genuinely useful at renewal |
 | Strategic Coordination WG | No | As above |
 | Filling a single vacancy | No | One round inside the 21-day Replacement Completion Time, and with one seat the scope argument does not arise at all |
 | A field of 20+ nominees | **Worth considering** | Grading everyone is a research project and turnout is what pays for it — but this is a property of a particular election, and a resolution must be in force before nominations open, so it is hard to reach in time. A standing resolution for a role that reliably draws large fields is the practical form |
 
-**Two arguments for two-stage have expired; one has not.** Earlier versions of this guide routed the Permanent RAC and Treasury Signers to two-stage because Majority Judgment could be captured more cheaply, and because it offered no supermajority protection. The Grade Quantile answered both: grades settle at three-fifths, the same share as the Stage 2 gate, and it cannot be tuned per election.
+**Two arguments for two-stage have expired; one has not.** Earlier versions of this guide routed the Permanent RAC and Treasury Signers to two-stage because Majority Judgment could be captured more cheaply, and because it offered no supermajority protection. The Grade Quantile answered both: grades settle at three-fifths, the same share as the Stage 2 gate, and it cannot be tuned per election. Those versions also assumed Treasury Signers were elected; they are allocated, and the row above sets out what that changes.
 
 What survives is narrower and worth stating precisely. It is not that Majority Judgment is easier to capture — it is that **the same block, at the same cost, gets more for its money**: one ballot decides an entire body, where two-stage makes it win each seat separately, in public, over weeks, against an electorate that can see the earlier results. And a minority's objection under two-stage can be aimed at one candidate without touching the field.
 

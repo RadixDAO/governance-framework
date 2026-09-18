@@ -249,9 +249,9 @@ The two governance floors above (the **7% Constitutional quorum floor**, item 2,
 
 Because this Charter is superior to the operational policy library (§13), a power to amend this Charter in an emergency must be established by the Charter itself and cannot be conferred by an operational policy alone. This section establishes that power. The **Governance Maintenance & Upgrade Framework §9** and the **Emergency & Safeguards Policy** carry its operational detail and are subordinate to this section.
 
-Notwithstanding the standard amendment process in §12, where an emergency requires a temporary amendment to a document in the policy framework — this Charter or an operational policy — before that process can complete, the amendment may be adopted by **unanimous written consent of all Delegates**, subject to ratification by Governance Proposal within 30 days. An emergency amendment that is not ratified within 30 days is void and of no effect from the expiry of that period.
+Notwithstanding the standard amendment process in §12, where an emergency requires a temporary amendment to a document in the policy framework — this Charter or an operational policy — before that process can complete, the amendment may be adopted by **unanimous written consent of all seated RAC members**, subject to ratification by Governance Proposal within 30 days. An emergency amendment that is not ratified within 30 days is void and of no effect from the expiry of that period.
 
-During the Transition Period, when the Delegated Functions are held by the Transition RAC (Delegate Mandate §6; **Operating Agreement Article VI**), "unanimous written consent of all Delegates" means the unanimous written consent of all seated Transition RAC members, and the ratification requirement is satisfied by a recognised advisory outcome meeting the standard recognition thresholds (**DAO Parameters §3A.3**).
+During the Transition Period, "all seated RAC members" means all seated Transition RAC members (**Operating Agreement Article VI**), and the ratification requirement is satisfied by a recognised advisory outcome meeting the standard recognition thresholds (**DAO Parameters §3A.3**).
 
 This power is strictly limited. An emergency amendment:
 
@@ -297,4 +297,4 @@ This section establishes the DAO's constitutional framework for notices and serv
 
 **Internal governance notices** — including proposals, disclosures, advisory acknowledgements, and announcements to Members and Governance Participants — are validly given by publication to the **Official Venue** (**Operating Agreement §1.18**).
 
-Any legal notice, demand, order, or regulatory correspondence received at the Registered Agent must be **forwarded to the Delegates and disclosed to the community** by publication of notice of receipt to the Official Venue. The Compliance Operations Policy §5 carries the operational detail of this obligation, including the 48-hour forwarding-and-disclosure timeframe and the Regulatory Demand Disclosure Protocol.
+Any legal notice, demand, order, or regulatory correspondence received at the Registered Agent must be **forwarded to the Delegates and RAC members and disclosed to the community** by publication of notice of receipt to the Official Venue. The Compliance Operations Policy §5 carries the operational detail of this obligation, including the 48-hour forwarding-and-disclosure timeframe and the Regulatory Demand Disclosure Protocol.

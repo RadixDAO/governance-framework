@@ -1,6 +1,6 @@
 # Compliance Operations Policy
 
-*Version v1.0.0 — Last updated 2026-08-27*
+*Version v1.0.0 — Last updated 2026-09-18*
 
 ---
 

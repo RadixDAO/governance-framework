@@ -1,6 +1,6 @@
 # Radix DAO Charter
 
-*Version v1.0.0 — Last updated 2026-09-18*
+*Version v1.0.0 — Last updated 2026-09-19*
 
 ---
 
@@ -281,7 +281,7 @@ This hierarchy is intentional. The Operating Agreement is the legally registered
 
 Operational, technical, and procedural details are defined in the DAO's policy library — a set of governance documents that give effect to the principles and authority established here.
 
-**The policy library forms part of this Charter.** The policy library ratified by the community together with this Charter forms part of this Charter for the purposes of the Operating Agreement — including **Operating Agreement §11.1**, which requires the Charter to contain the DAO's detailed governance framework, the candidacy, nomination and election rules for the Permanent RAC, and its detailed governance process mechanics; and the references in **Operating Agreement §1.19** and **Schedule 5, condition 7** to the Elections Policy "forming part" of the Charter. The documents so incorporated are those listed in the ratification proposal that adopts this framework. In particular, the **Proposal & Voting Framework**, the **Elections & Role Governance Policy**, the **DAO Parameters Registry**, the **RAC Mandate**, and the **Delegate Mandate** carry the governance process mechanics, election rules, and role definitions that Operating Agreement §11.1 locates in the Charter.
+**Scope of "Charter" in the Operating Agreement.** The policy library ratified by the community together with this Charter forms part of this Charter for the purposes of the Operating Agreement — including **Operating Agreement §11.1**, which requires the Charter to contain the DAO's detailed governance framework, the candidacy, nomination and election rules for the Permanent RAC, and its detailed governance process mechanics; and the references in **Operating Agreement §1.19** and **Schedule 5, condition 7** to the Elections Policy "forming part" of the Charter. The documents so incorporated are those listed in the ratification proposal that adopts this framework. In particular, the **Proposal & Voting Framework**, the **Elections & Role Governance Policy**, the **DAO Parameters Registry**, the **RAC Mandate**, and the **Delegate Mandate** carry the governance process mechanics, election rules, and role definitions that Operating Agreement §11.1 locates in the Charter.
 
 Incorporation does not alter the order of precedence set out above: the Operating Agreement continues to prevail over this Charter and over every incorporated policy, and this Charter continues to prevail over every incorporated policy where they conflict. Nor does it alter the amendment route for an incorporated policy, which remains a Governance Process proposal under the **Governance Maintenance & Upgrade Framework** — except where a change would amend this Charter itself or an Entrenched Provision, in which case §12 applies.
 

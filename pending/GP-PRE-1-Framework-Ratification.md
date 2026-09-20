@@ -52,6 +52,18 @@ The signed PDFs in §2 are signed with a single self-signed certificate created 
 
 A document whose signature is absent, invalid, or chains to any other certificate is not a ratified version, whatever its SHA-256.
 
+## 2B. Where to find the ratified documents
+
+The signed PDFs listed in §2 are published to the **Official Venue**, `https://radixdao.org`, and mirrored in the governance repository at `https://github.com/RadixDAO/governance-framework` under `signed/`. The Official Venue is the parameter recorded in the On-Chain Identifiers & Verification Policy §3 — item 7 of the manifest above.
+
+To verify any document in §2:
+
+1. Obtain the signed PDF from the Official Venue.
+2. Compute its SHA-256 and compare it to the row in §2 — `sha256sum <file>`, or `Get-FileHash -Algorithm SHA256 <file>` on Windows.
+3. Confirm the signature chains to the certificate in §2A, matching it by **fingerprint**, not by name.
+
+A copy obtained from any other source establishes nothing until it matches both a §2 hash and the §2A certificate.
+
 ## 3. Effect on passage
 
 1. The documents in §2 are the community-ratified governance framework, satisfying Activation Condition 6(b).

@@ -145,4 +145,4 @@ with the community and a new legal wrapper would similarly recognise it.
 5. **GP-ACTIVATE-1** (Activation Vote) passes → the **Activation Date**: the Company becomes Algorithmically Governed, governance outcomes become binding, and the Transition RAC sunsets.
 
 The full governance reference library, including working drafts, templates, and activation history, is
-maintained in the [Radix DAO reference repository](https://github.com/Shadaffy/radix-dao).
+maintained in the [Radix DAO reference repository](https://github.com/RadixDAO/governance-framework).

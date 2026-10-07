@@ -31,19 +31,8 @@ Under the Operating Agreement, the framework is adopted and activated through a 
 | Field | Value |
 |---|---|
 | **Title** | Constitutional Ratification of the Governance Framework |
-| **Category** | Constitutional |
-| **Threshold** | ≥ 66% YES / ≥ 10% quorum (DAO Parameters §3A.1) |
-| **Status** | Ready for review (pre-formation) |
-| **Submitted** | [To be confirmed] |
-| **Vote opened** | [To be confirmed] |
-| **Vote closed** | — |
-| **Result** | — |
-| **On-chain record** | [Proposal ID — recorded on passage] |
-| **Published to** | Official Venue — `https://radixdao.org` |
-| **Ratified documents** | Signed PDFs in `signed/`; SHA-256 of each recorded in the proposal manifest |
-| **Proposal document** | Operative ballot text drafted at `pending/GP-PRE-1-Framework-Ratification.md` — this is what is submitted to the governance system and recorded on-chain. Removed from the repository on passage |
-
-**Effect:** ratifies the **Charter** and the **operational policy library** as the DAO's governance framework (Activation Condition 6); recognised and given legal effect by the Operating Agreement on formation (OA §11.1, §11.2, §11.5). Does **not** form the entity or activate the DAO. The documents ratified are the active governance document set in the root category folders, each with its signed PDF in `signed/`.
+| **Status** | Passed |
+| **On-chain record** | [vote.radixdao.org](https://vote.radixdao.org) |
 
 ---
 

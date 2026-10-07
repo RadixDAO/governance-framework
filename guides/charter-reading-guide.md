@@ -1,6 +1,6 @@
 # Charter Reading Guide (Plain Language)
 
-*A companion to [charter.md](charter.md) for non-lawyers. This guide is **not** part of the Charter and has no legal force — if anything here seems to differ from the Charter, the Charter wins. Its only job is to help you understand **why each section exists** and what it is doing.*
+*A companion to [charter.md](../constitutional/charter.md) for non-lawyers. This guide is **not** part of the Charter and has no legal force — if anything here seems to differ from the Charter, the Charter wins. Its only job is to help you understand **why each section exists** and what it is doing.*
 
 ---
 

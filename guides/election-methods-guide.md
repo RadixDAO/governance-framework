@@ -1,8 +1,8 @@
 # Election Methods Guide (Principles)
 
-*A companion to the [Elections & Role Governance Policy](elections-and-role-governance-policy.md) and the [Proposal & Voting Framework](proposal-and-voting-framework.md). This guide is **not** part of the governance framework and has no legal force — if anything here seems to differ from a policy, the policy (and above it, the Charter and Operating Agreement) wins. Its only job is to set out the considerations that bear on choosing between the DAO's two election mechanisms. Nothing here is a requirement, a test, or a condition on anyone's discretion.*
+*A companion to the [Elections & Role Governance Policy](../governance/elections-and-role-governance-policy.md) and the [Proposal & Voting Framework](../governance/proposal-and-voting-framework.md). This guide is **not** part of the governance framework and has no legal force — if anything here seems to differ from a policy, the policy (and above it, the Charter and Operating Agreement) wins. Its only job is to set out the considerations that bear on choosing between the DAO's two election mechanisms. Nothing here is a requirement, a test, or a condition on anyone's discretion.*
 
-*The binding rules are in the Proposal & Voting Framework §4.5, §6.2.4 and §6.2.5, the Elections & Role Governance Policy §7 and §7A, and the [DAO Parameters Registry](../parameters/dao-parameters-registry.md) §6B. For the framework as a whole, see the [Policy Library Reading Guide](../policy-library-reading-guide.md).*
+*The binding rules are in the Proposal & Voting Framework §4.5, §6.2.4 and §6.2.5, the Elections & Role Governance Policy §7 and §7A, and the [DAO Parameters Registry](../parameters/dao-parameters-registry.md) §6B. For the framework as a whole, see the [Policy Library Reading Guide](policy-library-reading-guide.md).*
 
 ---
 
@@ -231,14 +231,14 @@ That is a real argument and the DAO may act on it by resolution. It is no longer
 
 | Question | Look here |
 |---|---|
-| The election pipeline, and both mechanisms in outline | [Proposal & Voting Framework](proposal-and-voting-framework.md) §4.5 |
+| The election pipeline, and both mechanisms in outline | [Proposal & Voting Framework](../governance/proposal-and-voting-framework.md) §4.5 |
 | The Temperature Check as candidate-list approval | Proposal & Voting Framework §3.2 |
 | Majority Judgment mechanics — grades, the Grade Quantile, qualifying grades, ties, reruns | Proposal & Voting Framework §6.2.4 |
 | Two-stage mechanics | Proposal & Voting Framework §6.2.2, §6.2.5, §6.2.7 |
 | Voting power and the snapshot | Proposal & Voting Framework §6.1 |
 | Participation and denominators for graded ballots | Proposal & Voting Framework §6.3 |
 | How the RAC determines and publishes a result | Proposal & Voting Framework §6.5 |
-| Election process, both mechanisms | [Elections & Role Governance Policy](elections-and-role-governance-policy.md) §7 (two-stage: §7.1–§7.3; Majority Judgment: §7A) |
+| Election process, both mechanisms | [Elections & Role Governance Policy](../governance/elections-and-role-governance-policy.md) §7 (two-stage: §7.1–§7.3; Majority Judgment: §7A) |
 | Reserve list | Elections & Role Governance Policy §7.5 |
 | Unfilled seats and vacancies | Elections & Role Governance Policy §11; founding elections §17.1 |
 | Term renewal and challenges | Elections & Role Governance Policy §9 |

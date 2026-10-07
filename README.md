@@ -15,13 +15,13 @@ Everything in this repository is either currently in force or under active consi
 3. **GP-ELECT-1 — Permanent RAC Election** (Activation Condition 7).
 4. **GP-ACTIVATE-1 — Activation Vote**: the Company becomes Algorithmically Governed and governance outcomes become binding.
 
-See the [`pending/`](pending/) folder for the full framework and the proposal sequence. The table below will reflect the operative framework once the Activation Vote passes.
+GP-PRE-1 has passed: the ratified framework is in the root category folders, with its signed PDFs in [`signed/`](signed/). See [PROPOSALS.md](PROPOSALS.md) for the proposal sequence. The table below will reflect the operative framework once the Activation Vote passes.
 
 ---
 
 ## Operative documents
 
-*This section will be populated once GP-PRE-1 passes.*
+*This section will be populated once the Activation Vote (GP-ACTIVATE-1) passes.*
 
 | Document | Category | Adopted by | Effective date |
 |---|---|---|---|
@@ -33,7 +33,7 @@ See the [`pending/`](pending/) folder for the full framework and the proposal se
 
 | Proposal | Status | Documents |
 |---|---|---|
-| [GP-PRE-1: Constitutional Ratification of the Governance Framework](pending/GP-PRE-1-Framework-Ratification.md) | Ready for review | [View pending documents →](pending/) |
+| [GP-PRE-1: Constitutional Ratification of the Governance Framework](https://vote.radixdao.org) | Passed | [View signed documents →](signed/) |
 | GP-ELECT-1: Permanent RAC Election | Not yet drafted | [pending/](pending/) |
 | GP-ACTIVATE-1: Activation Vote | Not yet drafted | [pending/](pending/) |
 
@@ -47,11 +47,13 @@ See [PROPOSALS.md](PROPOSALS.md) for the full record of proposals, what each one
 
 ## Reading guides (companion, non-operative)
 
-For readers approaching the framework for the first time, three plain-language companion guides explain the **purpose** of each document in non-legal terms, and the reasoning behind one choice the framework leaves open. They are **not** part of the governance framework, are not ratified by GP-PRE-1, and have no legal force — where a guide and an operative document differ, the operative document prevails. The authoritative document list lives in [`pending/README.md`](pending/README.md).
+For readers approaching the framework for the first time, three plain-language companion guides explain the **purpose** of each document in non-legal terms, and the reasoning behind one choice the framework leaves open. They are **not** part of the governance framework, are not ratified by GP-PRE-1, and have no legal force — where a guide and an operative document differ, the operative document prevails. The authoritative document list is the GP-PRE-1 manifest, recorded on-chain at [vote.radixdao.org](https://vote.radixdao.org).
 
-- [Charter Reading Guide](pending/constitutional/charter-reading-guide.md) — why each section of the Charter exists.
-- [Policy Library Reading Guide](pending/policy-library-reading-guide.md) — a one-line purpose for every policy and framework.
-- [Election Methods Guide](pending/governance/election-methods-guide.md) — the considerations bearing on the choice between the two election mechanisms.
+- [Charter Reading Guide](guides/charter-reading-guide.md) — why each section of the Charter exists.
+- [Policy Library Reading Guide](guides/policy-library-reading-guide.md) — a one-line purpose for every policy and framework.
+- [Election Methods Guide](guides/election-methods-guide.md) — the considerations bearing on the choice between the two election mechanisms.
+
+The `guides/` folder also holds the [Roles Registry](guides/roles-registry.md), a navigation aid that maps every role to the documents that define and govern it. Like the guides, it is not ratified by GP-PRE-1 and is not a source of rules.
 
 ---
 
@@ -73,10 +75,11 @@ When two documents conflict, the following order applies (highest to lowest):
 
 | Path | Contents |
 |---|---|
-| `constitutional/`, `governance/`, `legal/`, `parameters/` | The **active** governance document set — the `.md` source of every document currently in force. Empty until GP-PRE-1 passes. |
+| `constitutional/`, `governance/`, `legal/`, `parameters/` | The **active** governance document set — the `.md` source of every document ratified by GP-PRE-1. `legal/` is empty until formation. |
 | `signed/` | The signed, hashed PDF of each document in the active set. One PDF per active document. |
-| `pending/` | Documents under development or in a proposal cycle, in the same category subfolders. |
-| `pending/signed/` | The signed, hashed PDFs produced for a pending proposal, once its documents are versioned and executed. Empty until then. |
+| `guides/` | Companion reading guides and the Roles Registry. Non-operative navigation aids; not ratified and not a source of rules. |
+| `pending/` | Documents under development or in a proposal cycle, in the same category subfolders. The Operating Agreement and Certificate of Formation remain in `pending/legal/` until formation. |
+| `pending/signed/` | The signed, hashed PDFs produced for a pending proposal, once its documents are versioned and executed. Currently holds the signed Operating Agreement and Certificate of Formation, until formation. |
 | `archive/` | Superseded signed PDFs — the prior version of any document that has since been renewed. |
 | `PROPOSALS.md` | The governance history: every proposal and the documents it affected. |
 

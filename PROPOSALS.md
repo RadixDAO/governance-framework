@@ -36,6 +36,20 @@ Under the Operating Agreement, the framework is adopted and activated through a 
 
 ---
 
+## Formation
+
+Formation is a step of the founding sequence, not a proposal.
+
+| Field | Value |
+|---|---|
+| **Status** | Complete |
+| **Filed** | 9 October 2026 |
+| **MIDAO registration number** | 10280-26 |
+| **Foreign Investment Business License** | RMI-2026-65, granted 8 October 2026 |
+| **Record** | [`legal/formation/`](legal/formation/) |
+
+---
+
 ## GP-ELECT-1 — Permanent RAC Election
 
 | Field | Value |

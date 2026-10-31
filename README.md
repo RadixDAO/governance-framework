@@ -15,7 +15,7 @@ Everything in this repository is either currently in force or under active consi
 3. **GP-ELECT-1 — Permanent RAC Election** (Activation Condition 7).
 4. **GP-ACTIVATE-1 — Activation Vote**: the Company becomes Algorithmically Governed and governance outcomes become binding.
 
-GP-PRE-1 has passed: the ratified framework is in the root category folders, with its signed PDFs in [`signed/`](signed/). See [PROPOSALS.md](PROPOSALS.md) for the proposal sequence. The table below will reflect the operative framework once the Activation Vote passes.
+GP-PRE-1 has passed: the ratified framework is in the root category folders, with its signed PDFs in [`signed/`](signed/). Formation is complete: the Certificate of Formation and Operating Agreement were filed on 9 October 2026, and the formation record is in [`legal/formation/`](legal/formation/). See [PROPOSALS.md](PROPOSALS.md) for the proposal sequence. The table below will reflect the operative framework once the Activation Vote passes.
 
 ---
 
@@ -75,12 +75,14 @@ When two documents conflict, the following order applies (highest to lowest):
 
 | Path | Contents |
 |---|---|
-| `constitutional/`, `governance/`, `legal/`, `parameters/` | The **active** governance document set — the `.md` source of every document ratified by GP-PRE-1. `legal/` is empty until formation. |
-| `signed/` | The signed, hashed PDF of each document in the active set. One PDF per active document. |
+| `constitutional/`, `governance/`, `parameters/` | The **active** governance document set — the `.md` source of every document ratified by GP-PRE-1. |
+| `legal/` | The `.md` sources of the Operating Agreement and Certificate of Formation. |
+| `legal/formation/` | The formation record: the certified, signed PDFs of the documents as filed, with the certificates issued on formation. Personal details in the Operating Agreement and Certificate of Formation are redacted. |
+| `signed/` | The signed, hashed PDF of each document ratified by GP-PRE-1. One PDF per ratified document. |
 | `guides/` | Companion reading guides and the Roles Registry. Non-operative navigation aids; not ratified and not a source of rules. |
-| `pending/` | Documents under development or in a proposal cycle, in the same category subfolders. The Operating Agreement and Certificate of Formation remain in `pending/legal/` until formation. |
-| `pending/signed/` | The signed, hashed PDFs produced for a pending proposal, once its documents are versioned and executed. Currently holds the signed Operating Agreement and Certificate of Formation, until formation. |
-| `archive/` | Superseded signed PDFs — the prior version of any document that has since been renewed. |
+| `pending/` | Documents under development or in a proposal cycle, in the same category subfolders. |
+| `pending/signed/` | The signed, hashed PDFs produced for a pending proposal, once its documents are versioned and executed. |
+| `archive/` | Superseded signed PDFs — the prior version of any document that has since been renewed, and the pre-filing signed copies of the Operating Agreement and Certificate of Formation. |
 | `PROPOSALS.md` | The governance history: every proposal and the documents it affected. |
 
 ### Document lifecycle
@@ -94,6 +96,6 @@ When two documents conflict, the following order applies (highest to lowest):
 
 ## About this repository
 
-This repository is updated only when a governance proposal passes. Each merge to `main` corresponds to a DAO vote. The commit history is the governance audit trail.
+This repository is updated when a governance proposal passes or a step of the founding sequence is completed. The commit history is the governance audit trail.
 
 For the complete reference library — including working drafts, templates, analysis materials, and the full activation roadmap — see the [Radix DAO reference repository](https://github.com/Shadaffy/radix-dao).
